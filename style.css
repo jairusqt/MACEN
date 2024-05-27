@@ -23,6 +23,21 @@ body::before {
   filter: grayscale(75%);
   z-index: -1;
 }
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: inherit;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: grayscale(75%);
+  z-index: -1;
+}
 
 #my-chart .column {
   --color-1: rgba(255, 170, 170, 0.2);
